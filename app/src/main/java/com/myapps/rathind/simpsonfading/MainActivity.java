@@ -1,5 +1,4 @@
 package com.myapps.rathind.simpsonfading;
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,13 +17,12 @@ public class MainActivity extends AppCompatActivity {
             bartIsShowing = false;
             bartImageView.animate().alpha(0).setDuration(2000);
             homerImageView.animate().alpha(1).setDuration(2000);
-
         } else {
+            bartIsShowing = true;
             bartImageView.animate().alpha(1).setDuration(2000);
             homerImageView.animate().alpha(0).setDuration(2000);
         }
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
